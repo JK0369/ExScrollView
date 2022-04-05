@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7194B5F482BF5B2441A2120E /* Pods_ExScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28112C2C0AF26E16775CF10C /* Pods_ExScrollView.framework */; };
 		C64148E327FC4F8F0014884C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64148E227FC4F8F0014884C /* AppDelegate.swift */; };
 		C64148E527FC4F8F0014884C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64148E427FC4F8F0014884C /* SceneDelegate.swift */; };
 		C64148E727FC4F8F0014884C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64148E627FC4F8F0014884C /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28112C2C0AF26E16775CF10C /* Pods_ExScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B7A6A958C71FCA8A82E7F3 /* Pods-ExScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExScrollView.debug.xcconfig"; path = "Target Support Files/Pods-ExScrollView/Pods-ExScrollView.debug.xcconfig"; sourceTree = "<group>"; };
 		C64148DF27FC4F8F0014884C /* ExScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64148E227FC4F8F0014884C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C64148E427FC4F8F0014884C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		C64148EB27FC4F910014884C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C64148EE27FC4F910014884C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C64148F027FC4F910014884C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD5C3759DB79E90C30D6311 /* Pods-ExScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExScrollView.release.xcconfig"; path = "Target Support Files/Pods-ExScrollView/Pods-ExScrollView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7194B5F482BF5B2441A2120E /* Pods_ExScrollView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54F2D5863C99F9408E3AF2B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75B7A6A958C71FCA8A82E7F3 /* Pods-ExScrollView.debug.xcconfig */,
+				ECD5C3759DB79E90C30D6311 /* Pods-ExScrollView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B061A200E46E8DD4A3D90944 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28112C2C0AF26E16775CF10C /* Pods_ExScrollView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C64148D627FC4F8F0014884C = {
 			isa = PBXGroup;
 			children = (
 				C64148E127FC4F8F0014884C /* ExScrollView */,
 				C64148E027FC4F8F0014884C /* Products */,
+				54F2D5863C99F9408E3AF2B5 /* Pods */,
+				B061A200E46E8DD4A3D90944 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C64148F327FC4F910014884C /* Build configuration list for PBXNativeTarget "ExScrollView" */;
 			buildPhases = (
+				BE5002EA9E91B3BFA5CBB63C /* [CP] Check Pods Manifest.lock */,
 				C64148DB27FC4F8F0014884C /* Sources */,
 				C64148DC27FC4F8F0014884C /* Frameworks */,
 				C64148DD27FC4F8F0014884C /* Resources */,
+				1D86D09FF2956DA05CE51061 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D86D09FF2956DA05CE51061 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExScrollView/Pods-ExScrollView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExScrollView/Pods-ExScrollView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExScrollView/Pods-ExScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE5002EA9E91B3BFA5CBB63C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExScrollView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C64148DB27FC4F8F0014884C /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		C64148F427FC4F910014884C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B7A6A958C71FCA8A82E7F3 /* Pods-ExScrollView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		C64148F527FC4F910014884C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECD5C3759DB79E90C30D6311 /* Pods-ExScrollView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
